@@ -1,4 +1,4 @@
-# Deep Research Agent
+# MiniMax-M2 Deep Research Agent
 
 A sophisticated research tool powered by **Minimax M2** with interleaved thinking, **Exa** neural search, and multi-agent orchestration.
 
